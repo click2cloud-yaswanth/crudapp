@@ -43,6 +43,7 @@ export class DashboardComponent implements OnInit,DoCheck {
         .subscribe((response) => {
           console.log(response);
         });
+this.ngOnInit();
         this.empservice.getMethod().subscribe((response) => {
           this.setrecipes(response);
         });
@@ -64,6 +65,7 @@ export class DashboardComponent implements OnInit,DoCheck {
       .subscribe((res) => {
         console.log(res);
       });
+this.ngOnInit();
       console.log("hello");
       this.empservice.getMethod().subscribe((response) => {
         console.log(response);
@@ -82,6 +84,7 @@ export class DashboardComponent implements OnInit,DoCheck {
       .subscribe((res) => {
         console.log(res);
       });
+this.ngOnInit();
       this.empservice.getMethod().subscribe((response) => {
         console.log(response);
         this.setrecipes(response);
